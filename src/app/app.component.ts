@@ -11,7 +11,7 @@ export class ToteBetCalculatorComponent implements OnInit {
   betsDataInput: any;
   betsDividendOutput: any;
 
-  constructor(private ToteBetsDataService: ToteBetsDataService) {}
+  constructor(private toteBetsDataService: ToteBetsDataService) {}
 
   ngOnInit() {
     this.initForm();
@@ -23,11 +23,10 @@ export class ToteBetCalculatorComponent implements OnInit {
 
   submit() {
     console.log('inside submit()', this);
-    this.ToteBetsDataService.calculate(this.betsDataInput).subscribe(response=> {
+    this.toteBetsDataService.calculate(this.betsDataInput).subscribe(response => {
       console.log(response, 'this is the response');
-      let result:any = response.result;
+      const result: any = response.result;
       this.betsDividendOutput = result.replace(/ /g, '\n');
     });
-
   }
 }
