@@ -3,7 +3,7 @@ Small demo app using angular 6 to calculate dividends for Tote betting
 
 
 
-# Angular Material BettingHost App
+# Angular BettingHost App
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
@@ -43,7 +43,7 @@ npm install -g @angular/cli
 cd betting-host and then run npm install
 
 ## To launch this application
-Open a terminal and run command yarn start:mock to start server on port 4200.
+Open a terminal and run command yarn start:mock or ng serve to start server on port 4200.
 
 
 Open another terminal and run node mocks/mock.server.js. This will start server at port 3456 to serve static data in the form of web service
