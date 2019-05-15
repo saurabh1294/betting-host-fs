@@ -1,0 +1,15 @@
+<div class="container">
+	<div class="form">
+		<div class="form-group">
+			<label for="bets data input">Input bets dataset here</label>
+			<textarea class="form-control" id="betsDataInput" name="betsDataInput"
+			[(ngModel)]="betsDataInput" rows="10"></textarea>
+		</div>
+		<div class="form-group">
+			<label for="betsDividendOutput">Calculated Tote Bet Dividends </label>
+			<textarea readonly class="form-control" [(ngModel)]="betsDividendOutput"
+			id="betsDividendOutput" rows="5"></textarea>
+		</div>
+		<button type="submit" class="btn btn-primary mb-2" (click)="submit()">Submit</button>
+	</div>
+</div>

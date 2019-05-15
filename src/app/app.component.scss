@@ -1,0 +1,34 @@
+
+@import '~bootstrap/scss/bootstrap';
+
+
+.horizontal-center {
+    margin: 0 35%;
+}
+
+.h2-align {
+    float:left; 
+    margin-top:20px;
+}
+
+div > mat-input {
+    width:300px;
+}
+
+div > mat-form-field {
+    width: 300px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+@media only screen and (max-width: 767px) {
+    div > mat-input {
+        width:80%
+    }
+    
+    div > mat-form-field {
+        width: 80%;
+    }
+}
